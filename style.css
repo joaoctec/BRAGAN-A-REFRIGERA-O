@@ -427,21 +427,61 @@ footer {
     }
 }
 
+/* --- Ajuste de Responsividade Limpo para Celular --- */
 @media (max-width: 768px) {
     .navbar {
-        padding: 15px 20px;
-    }
-    
-    .navbar nav a:not(.btn-nav) {
-        display: none; /* Esconde botões redundantes para focar na chamada direta */
+        padding: 15px 10px;
+        flex-direction: row; /* Mantém logo e menu na mesma linha horizontal */
+        justify-content: space-between;
+        gap: 5px;
     }
 
+    .navbar .logo {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .navbar nav {
+        display: flex;
+        align-items: center;
+        gap: 6px; /* Espaçamento ideal para telas pequenas */
+    }
+
+    /* Links de navegação compactos */
+    .navbar nav a:not(.btn-nav) {
+        display: inline-block;
+        margin-left: 0;
+        font-size: 0.75rem;
+        padding: 6px 8px;
+        background-color: #f0f4f8;
+        border-radius: 6px;
+        color: var(--dark-ice);
+        text-decoration: none;
+    }
+
+    /* Botão de Chamada Telefônica em Destaque */
+    .navbar .btn-nav {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        border-radius: 6px;
+        white-space: nowrap;
+        background: linear-gradient(135deg, var(--primary-color), var(--dark-ice));
+        color: var(--white) !important;
+    }
+
+    /* Otimização do Espaço do Carrossel no Mobile */
+    .hero-carousel {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    /* Ajuste fino do botão flutuante do WhatsApp */
     .whatsapp-float {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         bottom: 20px;
         right: 20px;
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .whatsapp-float .tooltip-text {
