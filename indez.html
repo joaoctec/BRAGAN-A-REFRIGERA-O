@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bragança Refrigeração | Assistência Técnica Especializada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><i class="fa-solid fa-snowflake icone-gelo"></i> Bragança Refrigeração</div>
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Diferenciais</a>
+            <a href="https://wa.me/5547988671042?text=Olá!+Preciso+de+um+orçamento+para+manutenção+de+refrigeração." target="_blank" class="nav-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp</a>
+            <a href="tel:47988671042" class="btn-nav"><i class="fa-solid fa-phone"></i> Ligar Agora</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="tag"><i class="fa-solid fa-bolt"></i> Atendimento Rápido em Joinville e Região</span>
+                <h1>Especialista em Manutenção de Refrigeração</h1>
+                <p class="description">Seu equipamento parou? Nós resolvemos com rapidez, honestidade e compromisso. Atendimento técnico especializado para comércios e residências.</p>
+                
+                <div class="Destaques-lista">
+                    <div class="item-destaque"><i class="fa-solid fa-check"></i> Carga de Gás</div>
+                    <div class="item-destaque"><i class="fa-solid fa-check"></i> Substituição de Peças</div>
+                    <div class="item-destaque"><i class="fa-solid fa-check"></i> Limpeza e Ajustes</div>
+                </div>
+
+                <a href="https://wa.me/5547988671042?text=Olá!+Gostaria+de+solicitar+uma+visita+técnica." target="_blank" class="btn-buy" id="comprar">Solicitar Técnico Agora <i class="fa-solid fa-screwdriver-wrench"></i></a>
+            </div>
+            
+            <div class="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80&w=600" alt="Manutenção de Câmaras Frias">
+                        <div class="carousel-caption">Câmaras Frias</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=600" alt="Reparo de Geladeiras Comerciais">
+                        <div class="carousel-caption">Geladeiras Comerciais e Freezers</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Conserto de Balcões Refrigerados">
+                        <div class="carousel-caption">Balcões e Ilhas Refrigeradas</div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="mudarSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="features">
+        <div class="container">
+            <h2>O Que Consertamos?</h2>
+            <p style="color: var(--text-light); margin-bottom: 40px; margin-top: -30px;">Soluções rápidas para não deixar o seu negócio ou sua casa na mão.</p>
+            <div class="grid-features">
+                <div class="feature-card">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <h3>Câmaras Frias</h3>
+                    <p>Manutenção preventiva e corretiva para garantir a temperatura ideal do seu estoque de congelados ou resfriados.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <h3>Freezers e Geladeiras</h3>
+                    <p>Reparos rápidos em freezers verticais, horizontais e geladeiras comerciais ou residenciais de todas as marcas.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-store"></i>
+                    <h3>Balcões e Vitrines</h3>
+                    <p>Assistência em balcões refrigerados, expositores de bebidas e ilhas de congelados para comércios, padarias e mercados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="specs">
+        <div class="container">
+            <h2>Compromisso e Confiança</h2>
+            <table class="specs-table">
+                <tr>
+                    <td><strong>Região de Atendimento</strong></td>
+                    <td>Joinville e cidades vizinhas</td>
+                </tr>
+                <tr>
+                    <td><strong>Serviços Inclusos</strong></td>
+                    <td>Troca de compressor, carga de gás, troca de termostato, borrachas e elétrica em geral.</td>
+                </tr>
+                <tr>
+                    <td><strong>Diferencial</strong></td>
+                    <td>Peças de alta qualidade, pontualidade, transparência e preço justo.</td>
+                </tr>
+                <tr>
+                    <td><strong>Contato Direto</strong></td>
+                    <td>(47) 98867-1042</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bragança Refrigeração. Eficiência, honestidade e compromisso com o cliente.</p>
+    </footer>
+
+    <a href="https://wa.me/5547988671042?text=Olá!+Preciso+de+um+técnico+para+um+conserto+urgente." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip-text">Problemas com frio? Fale conosco!</span>
+    </a>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function mostrarSlide(index) {
+            if (index >= slides.length) slideIndex = 0;
+            if (index < 0) slideIndex = slides.length - 1;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[slideIndex].classList.add('active');
+        }
+
+        function mudarSlide(passo) {
+            slideIndex += passo;
+            mostrarSlide(slideIndex);
+        }
+
+        // Troca automática a cada 4 segundos
+        setInterval(() => {
+            mudarSlide(1);
+        }, 4000);
+    </script>
+</body>
+</html>
